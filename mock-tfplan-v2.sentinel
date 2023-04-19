@@ -1,0 +1,866 @@
+terraform_version = "1.4.5"
+
+planned_values = {
+	"outputs": {},
+	"resources": {
+		"aws_iam_access_key.jbrisk": {
+			"address":        "aws_iam_access_key.jbrisk",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jbrisk",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_access_key",
+			"values": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "Jasper-Brisk",
+			},
+		},
+		"aws_iam_access_key.jdoe": {
+			"address":        "aws_iam_access_key.jdoe",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jdoe",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_access_key",
+			"values": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "Jane-Doe",
+			},
+		},
+		"aws_iam_access_key.jsmith": {
+			"address":        "aws_iam_access_key.jsmith",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jsmith",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_access_key",
+			"values": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "John-Smith",
+			},
+		},
+		"aws_iam_user.jbrisk": {
+			"address":        "aws_iam_user.jbrisk",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jbrisk",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_user",
+			"values": {
+				"force_destroy":        false,
+				"name":                 "Jasper-Brisk",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "Jasper Brisk",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "Jasper Brisk",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+		},
+		"aws_iam_user.jdoe": {
+			"address":        "aws_iam_user.jdoe",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jdoe",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_user",
+			"values": {
+				"force_destroy":        false,
+				"name":                 "Jane-Doe",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "Jane Doe",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "Jane Doe",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+		},
+		"aws_iam_user.jsmith": {
+			"address":        "aws_iam_user.jsmith",
+			"depends_on":     [],
+			"deposed_key":    "",
+			"index":          null,
+			"mode":           "managed",
+			"module_address": "",
+			"name":           "jsmith",
+			"provider_name":  "registry.terraform.io/hashicorp/aws",
+			"tainted":        false,
+			"type":           "aws_iam_user",
+			"values": {
+				"force_destroy":        false,
+				"name":                 "John-Smith",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "John Smith",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "John Smith",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+		},
+	},
+}
+
+variables = {}
+
+resource_changes = {
+		"aws_iam_access_key.jbrisk": {
+		"address": "aws_iam_access_key.jbrisk",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "Jasper-Brisk",
+			},
+			"after_unknown": {
+				"create_date":                    true,
+				"encrypted_secret":               true,
+				"encrypted_ses_smtp_password_v4": true,
+				"id":                   true,
+				"key_fingerprint":      true,
+				"secret":               true,
+				"ses_smtp_password_v4": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jbrisk",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_access_key",
+	},
+	"aws_iam_access_key.jdoe": {
+		"address": "aws_iam_access_key.jdoe",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "Jane-Doe",
+			},
+			"after_unknown": {
+				"create_date":                    true,
+				"encrypted_secret":               true,
+				"encrypted_ses_smtp_password_v4": true,
+				"id":                   true,
+				"key_fingerprint":      true,
+				"secret":               true,
+				"ses_smtp_password_v4": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jdoe",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_access_key",
+	},
+	"aws_iam_access_key.jsmith": {
+		"address": "aws_iam_access_key.jsmith",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"pgp_key": null,
+				"status":  "Active",
+				"user":    "John-Smith",
+			},
+			"after_unknown": {
+				"create_date":                    true,
+				"encrypted_secret":               true,
+				"encrypted_ses_smtp_password_v4": true,
+				"id":                   true,
+				"key_fingerprint":      true,
+				"secret":               true,
+				"ses_smtp_password_v4": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jsmith",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_access_key",
+	},
+	"aws_iam_user.jbrisk": {
+		"address": "aws_iam_user.jbrisk",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"force_destroy":        false,
+				"name":                 "Jasper-Brisk",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "Jasper Brisk",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "Jasper Brisk",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+			"after_unknown": {
+				"arn":       true,
+				"id":        true,
+				"tags":      {},
+				"tags_all":  {},
+				"unique_id": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jbrisk",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_user",
+	},
+	"aws_iam_user.jdoe": {
+		"address": "aws_iam_user.jdoe",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"force_destroy":        false,
+				"name":                 "Jane-Doe",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "Jane Doe",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "Jane Doe",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+			"after_unknown": {
+				"arn":       true,
+				"id":        true,
+				"tags":      {},
+				"tags_all":  {},
+				"unique_id": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jdoe",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_user",
+	},
+	"aws_iam_user.jsmith": {
+		"address": "aws_iam_user.jsmith",
+		"change": {
+			"actions": [
+				"create",
+			],
+			"after": {
+				"force_destroy":        false,
+				"name":                 "John-Smith",
+				"path":                 "/",
+				"permissions_boundary": null,
+				"tags": {
+					"name": "John Smith",
+				},
+				"tags_all": {
+					"environment": "development",
+					"name":        "John Smith",
+					"platform":    "terraform",
+					"repo-name":   "sentinel-access-keys",
+					"user":        "DougReeves",
+				},
+			},
+			"after_unknown": {
+				"arn":       true,
+				"id":        true,
+				"tags":      {},
+				"tags_all":  {},
+				"unique_id": true,
+			},
+			"before": null,
+		},
+		"deposed":        "",
+		"index":          null,
+		"mode":           "managed",
+		"module_address": "",
+		"name":           "jsmith",
+		"provider_name":  "registry.terraform.io/hashicorp/aws",
+		"type":           "aws_iam_user",
+	},
+}
+
+output_changes = {}
+
+raw = {
+	"configuration": {
+		"provider_config": {
+			"aws": {
+				"expressions": {
+					"default_tags": [
+						{
+							"tags": {
+								"constant_value": {
+									"environment": "development",
+									"platform":    "terraform",
+									"repo-name":   "sentinel-access-keys",
+									"user":        "DougReeves",
+								},
+							},
+						},
+					],
+					"region": {
+						"constant_value": "us-east-1",
+					},
+				},
+				"full_name":          "registry.terraform.io/hashicorp/aws",
+				"name":               "aws",
+				"version_constraint": "~> 4.0",
+			},
+		},
+		"root_module": {
+			"resources": [
+				{
+					"address": "aws_iam_access_key.jbrisk",
+					"expressions": {
+						"user": {
+							"references": [
+								"aws_iam_user.jbrisk.name",
+								"aws_iam_user.jbrisk",
+							],
+						},
+					},
+					"mode":                "managed",
+					"name":                "jbrisk",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_access_key",
+				},
+				{
+					"address": "aws_iam_access_key.jdoe",
+					"expressions": {
+						"user": {
+							"references": [
+								"aws_iam_user.jdoe.name",
+								"aws_iam_user.jdoe",
+							],
+						},
+					},
+					"mode":                "managed",
+					"name":                "jdoe",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_access_key",
+				},
+				{
+					"address": "aws_iam_access_key.jsmith",
+					"expressions": {
+						"user": {
+							"references": [
+								"aws_iam_user.jsmith.name",
+								"aws_iam_user.jsmith",
+							],
+						},
+					},
+					"mode":                "managed",
+					"name":                "jsmith",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_access_key",
+				},
+				{
+					"address": "aws_iam_user.jbrisk",
+					"expressions": {
+						"name": {
+							"constant_value": "Jasper-Brisk",
+						},
+						"tags": {
+							"constant_value": {
+								"name": "Jasper Brisk",
+							},
+						},
+					},
+					"mode":                "managed",
+					"name":                "jbrisk",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_user",
+				},
+				{
+					"address": "aws_iam_user.jdoe",
+					"expressions": {
+						"name": {
+							"constant_value": "Jane-Doe",
+						},
+						"tags": {
+							"constant_value": {
+								"name": "Jane Doe",
+							},
+						},
+					},
+					"mode":                "managed",
+					"name":                "jdoe",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_user",
+				},
+				{
+					"address": "aws_iam_user.jsmith",
+					"expressions": {
+						"name": {
+							"constant_value": "John-Smith",
+						},
+						"tags": {
+							"constant_value": {
+								"name": "John Smith",
+							},
+						},
+					},
+					"mode":                "managed",
+					"name":                "jsmith",
+					"provider_config_key": "aws",
+					"schema_version":      0,
+					"type":                "aws_iam_user",
+				},
+			],
+		},
+	},
+	"format_version": "1.1",
+	"planned_values": {
+		"root_module": {
+			"resources": [
+				{
+					"address":          "aws_iam_access_key.jbrisk",
+					"mode":             "managed",
+					"name":             "jbrisk",
+					"provider_name":    "registry.terraform.io/hashicorp/aws",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "aws_iam_access_key",
+					"values": {
+						"pgp_key": null,
+						"status":  "Active",
+						"user":    "Jasper-Brisk",
+					},
+				},
+				{
+					"address":          "aws_iam_access_key.jdoe",
+					"mode":             "managed",
+					"name":             "jdoe",
+					"provider_name":    "registry.terraform.io/hashicorp/aws",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "aws_iam_access_key",
+					"values": {
+						"pgp_key": null,
+						"status":  "Active",
+						"user":    "Jane-Doe",
+					},
+				},
+				{
+					"address":          "aws_iam_access_key.jsmith",
+					"mode":             "managed",
+					"name":             "jsmith",
+					"provider_name":    "registry.terraform.io/hashicorp/aws",
+					"schema_version":   0,
+					"sensitive_values": {},
+					"type":             "aws_iam_access_key",
+					"values": {
+						"pgp_key": null,
+						"status":  "Active",
+						"user":    "John-Smith",
+					},
+				},
+				{
+					"address":        "aws_iam_user.jbrisk",
+					"mode":           "managed",
+					"name":           "jbrisk",
+					"provider_name":  "registry.terraform.io/hashicorp/aws",
+					"schema_version": 0,
+					"sensitive_values": {
+						"tags":     {},
+						"tags_all": {},
+					},
+					"type": "aws_iam_user",
+					"values": {
+						"force_destroy":        false,
+						"name":                 "Jasper-Brisk",
+						"path":                 "/",
+						"permissions_boundary": null,
+						"tags": {
+							"name": "Jasper Brisk",
+						},
+						"tags_all": {
+							"environment": "development",
+							"name":        "Jasper Brisk",
+							"platform":    "terraform",
+							"repo-name":   "sentinel-access-keys",
+							"user":        "DougReeves",
+						},
+					},
+				},
+				{
+					"address":        "aws_iam_user.jdoe",
+					"mode":           "managed",
+					"name":           "jdoe",
+					"provider_name":  "registry.terraform.io/hashicorp/aws",
+					"schema_version": 0,
+					"sensitive_values": {
+						"tags":     {},
+						"tags_all": {},
+					},
+					"type": "aws_iam_user",
+					"values": {
+						"force_destroy":        false,
+						"name":                 "Jane-Doe",
+						"path":                 "/",
+						"permissions_boundary": null,
+						"tags": {
+							"name": "Jane Doe",
+						},
+						"tags_all": {
+							"environment": "development",
+							"name":        "Jane Doe",
+							"platform":    "terraform",
+							"repo-name":   "sentinel-access-keys",
+							"user":        "DougReeves",
+						},
+					},
+				},
+				{
+					"address":        "aws_iam_user.jsmith",
+					"mode":           "managed",
+					"name":           "jsmith",
+					"provider_name":  "registry.terraform.io/hashicorp/aws",
+					"schema_version": 0,
+					"sensitive_values": {
+						"tags":     {},
+						"tags_all": {},
+					},
+					"type": "aws_iam_user",
+					"values": {
+						"force_destroy":        false,
+						"name":                 "John-Smith",
+						"path":                 "/",
+						"permissions_boundary": null,
+						"tags": {
+							"name": "John Smith",
+						},
+						"tags_all": {
+							"environment": "development",
+							"name":        "John Smith",
+							"platform":    "terraform",
+							"repo-name":   "sentinel-access-keys",
+							"user":        "DougReeves",
+						},
+					},
+				},
+			],
+		},
+	},
+	"relevant_attributes": [
+		{
+			"attribute": [
+				"name",
+			],
+			"resource": "aws_iam_user.jdoe",
+		},
+		{
+			"attribute": [
+				"name",
+			],
+			"resource": "aws_iam_user.jbrisk",
+		},
+		{
+			"attribute": [
+				"name",
+			],
+			"resource": "aws_iam_user.jsmith",
+		},
+	],
+	"resource_changes": [
+		{
+			"address": "aws_iam_access_key.jbrisk",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"pgp_key": null,
+					"status":  "Active",
+					"user":    "Jasper-Brisk",
+				},
+				"after_sensitive": {
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"after_unknown": {
+					"create_date":                    true,
+					"encrypted_secret":               true,
+					"encrypted_ses_smtp_password_v4": true,
+					"id":                   true,
+					"key_fingerprint":      true,
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jbrisk",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_access_key",
+		},
+		{
+			"address": "aws_iam_access_key.jdoe",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"pgp_key": null,
+					"status":  "Active",
+					"user":    "Jane-Doe",
+				},
+				"after_sensitive": {
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"after_unknown": {
+					"create_date":                    true,
+					"encrypted_secret":               true,
+					"encrypted_ses_smtp_password_v4": true,
+					"id":                   true,
+					"key_fingerprint":      true,
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jdoe",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_access_key",
+		},
+		{
+			"address": "aws_iam_access_key.jsmith",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"pgp_key": null,
+					"status":  "Active",
+					"user":    "John-Smith",
+				},
+				"after_sensitive": {
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"after_unknown": {
+					"create_date":                    true,
+					"encrypted_secret":               true,
+					"encrypted_ses_smtp_password_v4": true,
+					"id":                   true,
+					"key_fingerprint":      true,
+					"secret":               true,
+					"ses_smtp_password_v4": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jsmith",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_access_key",
+		},
+		{
+			"address": "aws_iam_user.jbrisk",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"force_destroy":        false,
+					"name":                 "Jasper-Brisk",
+					"path":                 "/",
+					"permissions_boundary": null,
+					"tags": {
+						"name": "Jasper Brisk",
+					},
+					"tags_all": {
+						"environment": "development",
+						"name":        "Jasper Brisk",
+						"platform":    "terraform",
+						"repo-name":   "sentinel-access-keys",
+						"user":        "DougReeves",
+					},
+				},
+				"after_sensitive": {
+					"tags":     {},
+					"tags_all": {},
+				},
+				"after_unknown": {
+					"arn":       true,
+					"id":        true,
+					"tags":      {},
+					"tags_all":  {},
+					"unique_id": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jbrisk",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_user",
+		},
+		{
+			"address": "aws_iam_user.jdoe",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"force_destroy":        false,
+					"name":                 "Jane-Doe",
+					"path":                 "/",
+					"permissions_boundary": null,
+					"tags": {
+						"name": "Jane Doe",
+					},
+					"tags_all": {
+						"environment": "development",
+						"name":        "Jane Doe",
+						"platform":    "terraform",
+						"repo-name":   "sentinel-access-keys",
+						"user":        "DougReeves",
+					},
+				},
+				"after_sensitive": {
+					"tags":     {},
+					"tags_all": {},
+				},
+				"after_unknown": {
+					"arn":       true,
+					"id":        true,
+					"tags":      {},
+					"tags_all":  {},
+					"unique_id": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jdoe",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_user",
+		},
+		{
+			"address": "aws_iam_user.jsmith",
+			"change": {
+				"actions": [
+					"create",
+				],
+				"after": {
+					"force_destroy":        false,
+					"name":                 "John-Smith",
+					"path":                 "/",
+					"permissions_boundary": null,
+					"tags": {
+						"name": "John Smith",
+					},
+					"tags_all": {
+						"environment": "development",
+						"name":        "John Smith",
+						"platform":    "terraform",
+						"repo-name":   "sentinel-access-keys",
+						"user":        "DougReeves",
+					},
+				},
+				"after_sensitive": {
+					"tags":     {},
+					"tags_all": {},
+				},
+				"after_unknown": {
+					"arn":       true,
+					"id":        true,
+					"tags":      {},
+					"tags_all":  {},
+					"unique_id": true,
+				},
+				"before":           null,
+				"before_sensitive": false,
+			},
+			"mode":          "managed",
+			"name":          "jsmith",
+			"provider_name": "registry.terraform.io/hashicorp/aws",
+			"type":          "aws_iam_user",
+		},
+	],
+	"terraform_version": "1.4.5",
+}

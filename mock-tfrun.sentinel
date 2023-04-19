@@ -1,0 +1,41 @@
+id = "run-8SxNMtADQoscQaEt"
+created_at = "2023-04-19T20:08:55.357Z"
+message = "updating names"
+commit_sha = "b75ed37844aba99c09f52de8ba6df3378586fe72"
+speculative = false
+is_destroy = false
+refresh = true
+refresh_only = false
+replace_addrs = null
+target_addrs = null
+
+variables = {
+	"AWS_ACCESS_KEY_ID": {
+		"category":  "env",
+		"sensitive": true,
+	},
+	"AWS_SECRET_ACCESS_KEY": {
+		"category":  "env",
+		"sensitive": true,
+	},
+}
+
+organization = {
+	"name": "friends-of-fate-903",
+}
+
+workspace = {
+	"auto_apply":  false,
+	"created_at":  "2023-04-19T19:53:47.163Z",
+	"description": null,
+	"id":          "ws-yDEjKJDCQQioRvKt",
+	"name":        "sentinel_access_keys",
+	"tags":        [],
+	"vcs_repo": {
+		"branch":             "",
+		"display_identifier": "james-cole2015/sentinel_access_keys",
+		"identifier":         "james-cole2015/sentinel_access_keys",
+		"ingress_submodules": false,
+	},
+	"working_directory": "",
+}

@@ -1,0 +1,167 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data":    {},
+		"modules": {},
+		"outputs": {},
+		"providers": {
+			"aws": {
+				"alias": {
+					"": {
+						"config": {
+							"default_tags": [
+								{
+									"tags": {
+										"environment": "development",
+										"platform":    "terraform",
+										"repo-name":   "sentinel-access-keys",
+										"user":        "DougReeves",
+									},
+								},
+							],
+							"region": "us-east-1",
+						},
+						"references": {
+							"default_tags": [
+								{
+									"tags": [],
+								},
+							],
+							"region": [],
+						},
+						"version": "~> 4.0",
+					},
+				},
+				"config": {
+					"default_tags": [
+						{
+							"tags": {
+								"environment": "development",
+								"platform":    "terraform",
+								"repo-name":   "sentinel-access-keys",
+								"user":        "DougReeves",
+							},
+						},
+					],
+					"region": "us-east-1",
+				},
+				"references": {
+					"default_tags": [
+						{
+							"tags": [],
+						},
+					],
+					"region": [],
+				},
+				"version": "~> 4.0",
+			},
+		},
+		"resources": {
+			"aws_iam_access_key": {
+				"jbrisk": {
+					"config":       {},
+					"provisioners": null,
+					"references": {
+						"user": [
+							"aws_iam_user.jbrisk.name",
+							"aws_iam_user.jbrisk",
+						],
+					},
+				},
+				"jdoe": {
+					"config":       {},
+					"provisioners": null,
+					"references": {
+						"user": [
+							"aws_iam_user.jdoe.name",
+							"aws_iam_user.jdoe",
+						],
+					},
+				},
+				"jsmith": {
+					"config":       {},
+					"provisioners": null,
+					"references": {
+						"user": [
+							"aws_iam_user.jsmith.name",
+							"aws_iam_user.jsmith",
+						],
+					},
+				},
+			},
+			"aws_iam_user": {
+				"jbrisk": {
+					"config": {
+						"name": "Jasper-Brisk",
+						"tags": {
+							"name": "Jasper Brisk",
+						},
+					},
+					"provisioners": null,
+					"references": {
+						"name": [],
+						"tags": [],
+					},
+				},
+				"jdoe": {
+					"config": {
+						"name": "Jane-Doe",
+						"tags": {
+							"name": "Jane Doe",
+						},
+					},
+					"provisioners": null,
+					"references": {
+						"name": [],
+						"tags": [],
+					},
+				},
+				"jsmith": {
+					"config": {
+						"name": "John-Smith",
+						"tags": {
+							"name": "John Smith",
+						},
+					},
+					"provisioners": null,
+					"references": {
+						"name": [],
+						"tags": [],
+					},
+				},
+			},
+		},
+		"variables": {},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+modules = _modules.root.modules
+providers = _modules.root.providers
+resources = _modules.root.resources
+variables = _modules.root.variables
+outputs = _modules.root.outputs

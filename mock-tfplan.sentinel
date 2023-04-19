@@ -1,0 +1,531 @@
+import "strings"
+import "types"
+
+_modules = {
+	"root": {
+		"data": {},
+		"path": [],
+		"resources": {
+			"aws_iam_access_key": {
+				"jbrisk": {
+					0: {
+						"applied": {
+							"pgp_key": null,
+							"status":  "Active",
+							"user":    "Jasper-Brisk",
+						},
+						"destroy": false,
+						"diff": {
+							"create_date": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key_fingerprint": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"pgp_key": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"status": {
+								"computed": false,
+								"new":      "Active",
+								"old":      "",
+							},
+							"user": {
+								"computed": false,
+								"new":      "Jasper-Brisk",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"jdoe": {
+					0: {
+						"applied": {
+							"pgp_key": null,
+							"status":  "Active",
+							"user":    "Jane-Doe",
+						},
+						"destroy": false,
+						"diff": {
+							"create_date": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key_fingerprint": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"pgp_key": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"status": {
+								"computed": false,
+								"new":      "Active",
+								"old":      "",
+							},
+							"user": {
+								"computed": false,
+								"new":      "Jane-Doe",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"jsmith": {
+					0: {
+						"applied": {
+							"pgp_key": null,
+							"status":  "Active",
+							"user":    "John-Smith",
+						},
+						"destroy": false,
+						"diff": {
+							"create_date": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"encrypted_ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"key_fingerprint": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"pgp_key": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"secret": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"ses_smtp_password_v4": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"status": {
+								"computed": false,
+								"new":      "Active",
+								"old":      "",
+							},
+							"user": {
+								"computed": false,
+								"new":      "John-Smith",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+			"aws_iam_user": {
+				"jbrisk": {
+					0: {
+						"applied": {
+							"force_destroy":        false,
+							"name":                 "Jasper-Brisk",
+							"path":                 "/",
+							"permissions_boundary": null,
+							"tags": {
+								"name": "Jasper Brisk",
+							},
+							"tags_all": {
+								"environment": "development",
+								"name":        "Jasper Brisk",
+								"platform":    "terraform",
+								"repo-name":   "sentinel-access-keys",
+								"user":        "DougReeves",
+							},
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"force_destroy": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "Jasper-Brisk",
+								"old":      "",
+							},
+							"path": {
+								"computed": false,
+								"new":      "/",
+								"old":      "",
+							},
+							"permissions_boundary": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.name": {
+								"computed": false,
+								"new":      "Jasper Brisk",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.environment": {
+								"computed": false,
+								"new":      "development",
+								"old":      "",
+							},
+							"tags_all.name": {
+								"computed": false,
+								"new":      "Jasper Brisk",
+								"old":      "",
+							},
+							"tags_all.platform": {
+								"computed": false,
+								"new":      "terraform",
+								"old":      "",
+							},
+							"tags_all.repo-name": {
+								"computed": false,
+								"new":      "sentinel-access-keys",
+								"old":      "",
+							},
+							"tags_all.user": {
+								"computed": false,
+								"new":      "DougReeves",
+								"old":      "",
+							},
+							"unique_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"jdoe": {
+					0: {
+						"applied": {
+							"force_destroy":        false,
+							"name":                 "Jane-Doe",
+							"path":                 "/",
+							"permissions_boundary": null,
+							"tags": {
+								"name": "Jane Doe",
+							},
+							"tags_all": {
+								"environment": "development",
+								"name":        "Jane Doe",
+								"platform":    "terraform",
+								"repo-name":   "sentinel-access-keys",
+								"user":        "DougReeves",
+							},
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"force_destroy": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "Jane-Doe",
+								"old":      "",
+							},
+							"path": {
+								"computed": false,
+								"new":      "/",
+								"old":      "",
+							},
+							"permissions_boundary": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.name": {
+								"computed": false,
+								"new":      "Jane Doe",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.environment": {
+								"computed": false,
+								"new":      "development",
+								"old":      "",
+							},
+							"tags_all.name": {
+								"computed": false,
+								"new":      "Jane Doe",
+								"old":      "",
+							},
+							"tags_all.platform": {
+								"computed": false,
+								"new":      "terraform",
+								"old":      "",
+							},
+							"tags_all.repo-name": {
+								"computed": false,
+								"new":      "sentinel-access-keys",
+								"old":      "",
+							},
+							"tags_all.user": {
+								"computed": false,
+								"new":      "DougReeves",
+								"old":      "",
+							},
+							"unique_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+				"jsmith": {
+					0: {
+						"applied": {
+							"force_destroy":        false,
+							"name":                 "John-Smith",
+							"path":                 "/",
+							"permissions_boundary": null,
+							"tags": {
+								"name": "John Smith",
+							},
+							"tags_all": {
+								"environment": "development",
+								"name":        "John Smith",
+								"platform":    "terraform",
+								"repo-name":   "sentinel-access-keys",
+								"user":        "DougReeves",
+							},
+						},
+						"destroy": false,
+						"diff": {
+							"arn": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"force_destroy": {
+								"computed": false,
+								"new":      "false",
+								"old":      "",
+							},
+							"id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+							"name": {
+								"computed": false,
+								"new":      "John-Smith",
+								"old":      "",
+							},
+							"path": {
+								"computed": false,
+								"new":      "/",
+								"old":      "",
+							},
+							"permissions_boundary": {
+								"computed": false,
+								"new":      "",
+								"old":      "",
+							},
+							"tags.%": {
+								"computed": false,
+								"new":      "1",
+								"old":      "",
+							},
+							"tags.name": {
+								"computed": false,
+								"new":      "John Smith",
+								"old":      "",
+							},
+							"tags_all.%": {
+								"computed": false,
+								"new":      "5",
+								"old":      "",
+							},
+							"tags_all.environment": {
+								"computed": false,
+								"new":      "development",
+								"old":      "",
+							},
+							"tags_all.name": {
+								"computed": false,
+								"new":      "John Smith",
+								"old":      "",
+							},
+							"tags_all.platform": {
+								"computed": false,
+								"new":      "terraform",
+								"old":      "",
+							},
+							"tags_all.repo-name": {
+								"computed": false,
+								"new":      "sentinel-access-keys",
+								"old":      "",
+							},
+							"tags_all.user": {
+								"computed": false,
+								"new":      "DougReeves",
+								"old":      "",
+							},
+							"unique_id": {
+								"computed": true,
+								"new":      "",
+								"old":      "",
+							},
+						},
+						"requires_new": false,
+					},
+				},
+			},
+		},
+	},
+}
+
+module_paths = [
+	[],
+]
+
+terraform_version = "1.4.5"
+
+variables = {}
+
+module = func(path) {
+	if types.type_of(path) is not "list" {
+		error("expected list, got", types.type_of(path))
+	}
+
+	if length(path) < 1 {
+		return _modules.root
+	}
+
+	addr = []
+	for path as p {
+		append(addr, "module")
+		append(addr, p)
+	}
+
+	return _modules[strings.join(addr, ".")]
+}
+
+data = _modules.root.data
+path = _modules.root.path
+resources = _modules.root.resources

@@ -1,0 +1,175 @@
+import "strings"
+
+providers = {
+	"aws": {
+		"alias": "",
+		"config": {
+			"default_tags": [
+				{
+					"tags": {
+						"constant_value": {
+							"environment": "development",
+							"platform":    "terraform",
+							"repo-name":   "sentinel-access-keys",
+							"user":        "DougReeves",
+						},
+					},
+				},
+			],
+			"region": {
+				"constant_value": "us-east-1",
+			},
+		},
+		"full_name":           "registry.terraform.io/hashicorp/aws",
+		"module_address":      "",
+		"name":                "aws",
+		"provider_config_key": "aws",
+		"version_constraint":  "~> 4.0",
+	},
+}
+
+resources = {
+	"aws_iam_access_key.jbrisk": {
+		"address": "aws_iam_access_key.jbrisk",
+		"config": {
+			"user": {
+				"references": [
+					"aws_iam_user.jbrisk.name",
+					"aws_iam_user.jbrisk",
+				],
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jbrisk",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_access_key",
+	},
+	"aws_iam_access_key.jdoe": {
+		"address": "aws_iam_access_key.jdoe",
+		"config": {
+			"user": {
+				"references": [
+					"aws_iam_user.jdoe.name",
+					"aws_iam_user.jdoe",
+				],
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jdoe",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_access_key",
+	},
+	"aws_iam_access_key.jsmith": {
+		"address": "aws_iam_access_key.jsmith",
+		"config": {
+			"user": {
+				"references": [
+					"aws_iam_user.jsmith.name",
+					"aws_iam_user.jsmith",
+				],
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jsmith",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_access_key",
+	},
+	"aws_iam_user.jbrisk": {
+		"address": "aws_iam_user.jbrisk",
+		"config": {
+			"name": {
+				"constant_value": "Jasper-Brisk",
+			},
+			"tags": {
+				"constant_value": {
+					"name": "Jasper Brisk",
+				},
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jbrisk",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_user",
+	},
+	"aws_iam_user.jdoe": {
+		"address": "aws_iam_user.jdoe",
+		"config": {
+			"name": {
+				"constant_value": "Jane-Doe",
+			},
+			"tags": {
+				"constant_value": {
+					"name": "Jane Doe",
+				},
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jdoe",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_user",
+	},
+	"aws_iam_user.jsmith": {
+		"address": "aws_iam_user.jsmith",
+		"config": {
+			"name": {
+				"constant_value": "John-Smith",
+			},
+			"tags": {
+				"constant_value": {
+					"name": "John Smith",
+				},
+			},
+		},
+		"count":               {},
+		"depends_on":          [],
+		"for_each":            {},
+		"mode":                "managed",
+		"module_address":      "",
+		"name":                "jsmith",
+		"provider_config_key": "aws",
+		"provisioners":        [],
+		"type":                "aws_iam_user",
+	},
+}
+
+provisioners = {}
+
+variables = {}
+
+outputs = {}
+
+module_calls = {}
+
+strip_index = func(addr) {
+	s = strings.split(addr, ".")
+	for s as i, v {
+		s[i] = strings.split(v, "[")[0]
+	}
+
+	return strings.join(s, ".")
+}
