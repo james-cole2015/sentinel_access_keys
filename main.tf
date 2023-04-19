@@ -3,7 +3,7 @@ User John Smith & Access Key
 */
 
 resource "aws_iam_user" "jsmith" {
-  name = "John Smith"
+  name = "John-Smith"
 
   tags = {
     name = "John Smith"
@@ -19,7 +19,7 @@ User Jane Doe & Access Key
 */
 
 resource "aws_iam_user" "jdoe" {
-  name = "Jane Doe"
+  name = "Jane-Doe"
 
   tags = {
     name = "Jane Doe"
@@ -35,7 +35,7 @@ User Jasper Brisk & Access Key
 */
 
 resource "aws_iam_user" "jbrisk" {
-  name = "Jasper Brisk"
+  name = "Jasper-Brisk"
 
   tags = {
     name = "Jasper Brisk"
