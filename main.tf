@@ -10,7 +10,7 @@ resource "aws_iam_user" "jsmith" {
   }
 }
 
-resource "aws_iam_access_key" "lb" {
+resource "aws_iam_access_key" "jsmith" {
   user = aws_iam_user.jsmith.name
 }
 
@@ -26,7 +26,7 @@ resource "aws_iam_user" "jdoe" {
   }
 }
 
-resource "aws_iam_access_key" "lb" {
+resource "aws_iam_access_key" "jdoe" {
   user = aws_iam_user.jdoe.name
 }
 
